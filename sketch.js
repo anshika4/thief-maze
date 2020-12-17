@@ -315,6 +315,7 @@ function draw() {
       win.addImage(winImage);
       win.visible=true;
       thief.scale=0.5;
+      diamond.visible=false;  
       }
   
 
@@ -376,6 +377,9 @@ function draw() {
       fireball2.isTouching(ghost1)||
       fireball3.isTouching(ghost1)){
       ghost1.destroy();
+      fireball1.destroy();
+      fireball2.destroy();
+      fireball3.destroy();  
       console.log("guard hit");
       }
       
